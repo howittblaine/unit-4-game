@@ -1,0 +1,44 @@
+body {
+	background-image: url("../images/prism.png");
+}
+
+.jumbotron {
+    background-color: #ff002257;
+    color: white;
+}
+
+#gameSection, #scoreSection {
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttonSection {
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+
+.numberBox {
+	font-size: 100px;
+	margin: 0px;
+}
+
+.icons {
+	display: inline-block;
+  	max-width: 159px;
+  	max-height: 159px;
+  	width: auto;
+  	height: auto;
+  	margin:10px;
+}

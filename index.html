@@ -1,25 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Blazer Card Collector | Blaine Howitt</title>
 
+	<!-- reset.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
-
 <body>
 
+	<!-- main container -->
+	<div class="container-fluid" id="mainBox">
 
+		<!-- header -->
+		<div class="jumbotron">
 
+			<h1 class="text-center">Blazer Card Collector</h1>
 
+			<h3 class="text-center">How to Play</h3>
 
+			<p class="text-center">
+				<h5>
+                    You will be given a random number at the start of the game. Use the cards to match your points to the random number. The value of the cards changes for every game and you must figure out their values on your own.
+                </h5>
+             </p>
+			<p class="text-center">
+                <h5>
+                Match your points to the random number to win. If you go over, you lose!
+                </h5>
+			</p>
 
+		</div>
 
+		<!-- game section -->
+		<div class="row" id="gameSection">
 
+			<!-- first column for random number -->
+			<div class="col-md-3" id="numberSection">
+				<h4 class="text-center" id="random">Match The Number:</h4>
+				<h2 class="numberBox text-center" id="randomNumber">120</h2>
+			</div>
 
+			<!-- second column for buttons -->
+			<div class="col-md-6 text-center" id="buttonSection">
 
+				<!-- Damian Lillard Pink Diamond -->
+				<button id="button-1" value="0"><img src="assets/images/Damian-Lillard-PD.png" class="img-responsive icons" id="icon1"></button>
 
+				<!-- Jusuf Nurkic Pink Diamond -->
+				<button id="button-2" value="0"><img src="assets/images/Jusuf-Nurkic-PD.png" class="img-responsive icons" id="icon2"></button>
 
-<script src="assets/javascript/game.js"></script>
+				<!-- CJ McCollum Amethyst -->
+				<button id="button-3" value="0"><img src="assets/images/CJ-McCollum-A.png" class="img-responsive icons" id="icon3"></button>
+
+				<!-- Evan Turner Ruby -->
+				<button id="button-4" value="0"><img src="assets/images/Evan-Turner-R.png" class="img-responsive icons" id="icon4"></button>
+
+			</div>
+
+			<!-- third column for total points -->
+			<div class="col-md-3" id="totalPoints">
+				<h4 class="text-center" id="score">Your Total Score:</h4>
+				<h2 class="numberBox text-center" id="totalNumber">0</h2>
+			</div>
+
+		</div>
+
+		<!-- footer section with tracking wins and losses -->
+		<div class="row" id="scoreSection">
+
+			<!-- spacer column -->
+			<div class="col-md-4"></div>
+
+			<!-- wins column -->
+			<div class="col-md-2" id="winSection">
+				<h3 class="text-center" id="wins">Wins:	0</h3>
+			</div>
+
+			<!-- losses column -->
+			<div class="col-md-2" id="lossSection">
+				<h3 class="text-center" id="losses">Losses: 0</h3>
+			</div>
+
+			<!-- spacer column -->
+			<div class="col-md-4"></div>
+
+		</div>
+
+	</div>
 
 </body>
+
+<script src="assets/javascript/game.js" ></script>
 
 </html>
